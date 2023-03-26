@@ -1,0 +1,171 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.body_container {
+    font-family: "Verdana", serif;
+    color: #747474;
+}
+
+.wrapper {
+    margin: 0 auto 0 auto;
+    max-width: 1140px;
+    padding: 5px;
+}
+
+.magazine_title {
+    display: block;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.magazine_subtitle {
+    display: block;
+    font-size: 3vw;
+    text-align: center;
+    font-style: italic;
+}
+
+.publish_info {
+    margin-top: 7px;
+    text-align: right;
+}
+
+.line_separator {
+    padding-bottom: 10px;
+    border-top: black solid 3px;
+    border-bottom: black solid 3px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.navbar_element {
+    text-align: center;
+    width: 95px;
+    padding: 5px;
+}
+
+.articleteaser_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postcard_image {
+    max-width: 100%;
+}
+
+.teaser_section {
+    width: 100%;
+}
+
+.teaser_text {
+    font-size: 20px;
+}
+
+.column_container {
+    columns: 250px;
+    column-rule: 1px solid #847070;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.search_input {
+    float: left;
+    border: cyan solid 1px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: lightcyan;
+}
+
+.search_button {
+    float: left;
+    padding: 8px
+}
+
+
+.searchform {
+    float: right;
+    margin-top: 25px;
+}
+
+.copyright_text {
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.link_text {
+    text-decoration: none;
+    color: #847070;
+}
+
+.link_text:hover {
+    text-decoration: underline;
+}
+
+.selected_menuitem {
+    background-color: #847070;
+    color: white;
+}
+
+.breadcrumb {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.image_right {
+    margin-top: 10px;
+    margin-left: 20px;
+    float: right;
+}
+
+.image_left {
+    margin-top: 10px;
+    margin-right: 25px;
+    float: left;
+}
+
+.details_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 35px 0;
+}
+
+.content_container {
+    padding: 16px 24px 16px 24px;
+    margin: 0 16px 16px 16px;
+    background-color: white;
+    width: 320px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+    .articleteaser_container {
+        flex-direction: row;
+    }
+
+    .teaser_section {
+        width: 50%;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+
+    }
